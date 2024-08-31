@@ -6,6 +6,7 @@ return {
       style = "night",
     },
   },
+  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
   {
     "nvim-lualine/lualine.nvim",
     event = "VeryLazy",
@@ -30,7 +31,7 @@ return {
 
       local opts = {
         options = {
-          theme = "auto",
+          theme = "catppuccin",
           globalstatus = vim.o.laststatus == 3,
           disabled_filetypes = { statusline = { "dashboard", "alpha", "ministarter" } },
           section_separators = "",
