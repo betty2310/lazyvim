@@ -1,3 +1,6 @@
--- bootstrap lazy.nvim, LazyVim and your plugins
 require("config.lazy")
-vim.cmd.colorscheme("catppuccin-mocha")
+require("mini.surround").setup()
+if not vim.g.vscode then
+  vim.cmd.colorscheme("tokyonight-night")
+else
+end
